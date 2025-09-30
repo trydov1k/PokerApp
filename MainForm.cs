@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace PokerApp
 {
-    public partial class mainForm : Form
+    public partial class MainForm : Form
     {
-        public mainForm()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void closeLabel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
