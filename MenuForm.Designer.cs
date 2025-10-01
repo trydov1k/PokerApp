@@ -33,7 +33,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.enterButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +50,7 @@
             // 
             // closeLabel
             // 
+            this.closeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeLabel.Dock = System.Windows.Forms.DockStyle.Right;
             this.closeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.closeLabel.ForeColor = System.Drawing.Color.Red;
@@ -83,7 +84,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(430, 40);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Меню режимов изменения блайндов";
+            this.label1.Text = "Меню выбора режима изменения блайндов";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -94,14 +95,15 @@
             this.panel2.Size = new System.Drawing.Size(35, 40);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // enterButton
             // 
-            this.button1.Location = new System.Drawing.Point(296, 506);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 50);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Подтвердить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.enterButton.Location = new System.Drawing.Point(296, 506);
+            this.enterButton.Name = "enterButton";
+            this.enterButton.Size = new System.Drawing.Size(160, 50);
+            this.enterButton.TabIndex = 2;
+            this.enterButton.Text = "Подтвердить";
+            this.enterButton.UseVisualStyleBackColor = true;
+            this.enterButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // Menu
             // 
@@ -109,7 +111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(500, 600);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.enterButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -127,6 +129,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button enterButton;
     }
 }

@@ -19,7 +19,14 @@ namespace PokerApp
 
         private void closeLabel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void menuLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menuForm = new Menu();
+            menuForm.Show();
         }
     }
 }

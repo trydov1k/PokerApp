@@ -73,6 +73,7 @@
             this.menuLabel.TabIndex = 1;
             this.menuLabel.Text = "menu";
             this.menuLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.menuLabel.Click += new System.EventHandler(this.menuLabel_Click);
             // 
             // closeLabel
             // 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace PokerApp
 {
+    
     public partial class Menu : Form
     {
         public Menu()
@@ -17,9 +18,22 @@ namespace PokerApp
             InitializeComponent();
         }
 
+        /// <summary>Закрывает текущее окно и открывает окно MainForm</summary>
+        private void OpenMainWindow()
+        { 
+            this.Close();
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+        }
+
         private void closeLabel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            OpenMainWindow();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenMainWindow();
         }
     }
 }
